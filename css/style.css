@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Reset do CSS */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+/* Topo */
+
+.topo{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #0000009f;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-brand{
+    width: 150px;
+    height: auto;
+
+}
+
+.nav-list{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-weight: 800;
+    color: #f58721;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    text-decoration: underline solid 2px;
+    text-underline-offset: 8px;
+    color: #ffffff;
+}
+
+
+.button-container
+
+.button-cta{
+    width: 250px;
+    height: 36px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 2px solid #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.button-cta:hover{
+    color: #000000;
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    transition-delay: 0.1s;
+}
+
+.conteudo{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Hero Section */
+
+.hero-section{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../assets/image/hero-section.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 80%;
+}
+
+.linear-container{
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to bottom #00000018, #0000004d, #000000c0, #000);
+}
+
+.text-hero-container{
+    width: 50%;
+    height: 250px;
+    padding: 16px;
+}
+
+.titulo-hero{
+    color: #ffffff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.descricao-hero{
+    color: #ffffff80;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.img-hero{
+    width: 100%;
+    height: auto;
+}
+
+.card-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+
+.card-1{
+    width: 300px;
+    height: 400px;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-image: url(../assets/image/byd-e-platform.webp);
+    background-size: 190%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-2{
+    width: 300px;
+    height: 400px;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-image: url(../assets/image/Super_DM-i-1.webp);
+    background-size: 160%;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-3{
+    width: 300px;
+    height: 400px;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-image: url(../assets/image/nev-card.webp);
+    background-size: 170%;
+    background-position-x: 55%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-4{
+    width: 300px;
+    height: 400px;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-image: url(../assets/image/Blade_battery-1.webp);
+    background-size: 170%;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Película com conteúdo */
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: #000000a8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.4s ease;
+}
+
+/* resumo de card/ cada card eu resumo para colocar as mesmas coisas para não precisar fazer um card para cada */
+
+.card-1:hover .overlay,
+.card-2:hover .overlay,
+.card-3:hover .overlay,
+.card-4:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-title{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.card-description{
+    color: #fffffff1;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.card-button{
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    padding: 12px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.card-button:hover{
+    background-color: #FFF;
+    color: #000000;
+}
+
+/* Seção Modelos */
+
+.modelos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.hibridos,
+.eletricos{
+    width: 50%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10%;
+}
+
+/* Imagem de fundo fica no : :after para permitir zoom sem mover o conteúdo */
+
+.hibridos::after,
+.eletricos::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    transition: transform 0.6s ease;
+    z-index: 0;
+}
+
+.hibridos::after{
+    background-image: url(../assets/image/modelos-hibridos.png);
+}
+
+.eletricos::after{
+    background-image: url(../assets/image/modelos-eletricos.png);
+}
+
+/* Película escura para melhorar a leitura do título e do CTA */
+
+.hibridos::before,
+.eletricos::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        #0000003e
+        #00000049
+    );
+    z-index: 1;
+}
+
+/* Zoom discreto somente na imagem */
+.hibridos:hover::after,
+.eletricos:hover::after{
+    transform: scale(1.08);
+}
+
+.modelos-content{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 24px;
+}
+
+.modelos-title{
+    color: #FFF;
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 20px #000000cc;
+}
+
+.modelos-button{
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 12px 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.modelos-button:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+.conces-section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/image/ultima-chamada-CTA.png);
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+
+.linear-container-conces{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    background-image: linear-gradient(to bottom #00000018, #0000004d, #000000c0, #000);
+}
+
+.title-conces-section{
+    color: #ffffff;
+    text-transform: uppercase;
+   
+}
+
+.sobre{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-container{
+    width: 948px;
+    height: 600px;
+    background-color: #dcd914;
+}
+
+.texto-sobre-container{
+    width: 948px;
+    height: 600px;
+    background-color: #2cb349;
+}
+
+.rodape{
+    width: 100%;
+    height: 250px;
+    background-color: #000000;
+}
+/* =========================
+   HAMBURGER
+========================= */
+
+.hamburger{
+    display:none;
+    width:32px;
+    height:24px;
+    position:relative;
+    cursor:pointer;
+    background:none;
+    border:none;
+    z-index:9999;
+}
+
+.hamburger span{
+    position:absolute;
+    width:100%;
+    height:3px;
+    background:#fff;
+    left:0;
+    transition:.4s;
+}
+
+.hamburger span:nth-child(1){
+    top:0;
+}
+
+.hamburger span:nth-child(2){
+    top:10px;
+}
+
+.hamburger span:nth-child(3){
+    top:20px;
+}
+
+.hamburger.active span:nth-child(1){
+    transform:rotate(45deg);
+    top:10px;
+}
+
+.hamburger.active span:nth-child(2){
+    opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+    transform:rotate(-45deg);
+    top:10px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4{
+    flex:1 1 300px;
+}
+
+@media (max-width: 1024px){
+
+    .text-hero-container{
+        width:75%;
+    }
+
+    .modelos{
+        flex-direction:column;
+    }
+
+    .hibridos,
+    .eletricos{
+        width:100%;
+        height:500px;
+    }
+}
+
+@media (max-width:768px){
+
+    .menu{
+        padding:20px;
+    }
+
+    .button-container{
+        display:none;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .nav-list{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:#000;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:40px;
+        transition:.4s ease;
+        z-index:999;
+    }
+
+    .nav-list.active{
+        right:0;
+    }
+
+    .nav-link{
+        font-size:1.4rem;
+    }
+
+    .hero-section{
+        height:100vh;
+        min-height:700px;
+        align-items:flex-end;
+    }
+
+    .linear-container{
+        height:auto;
+        padding:40px 0;
+    }
+
+    .text-hero-container{
+        width:100%;
+        height:auto;
+        padding:24px;
+    }
+
+    .titulo-hero{
+        font-size:2.1rem;
+        line-height:1.1;
+        margin-bottom:20px;
+    }
+
+    .descricao-hero{
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .card-container{
+        padding:20px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4{
+        width:100%;
+        max-width:500px;
+    }
+
+    .overlay{
+        opacity:1;
+        transform:none;
+        background:linear-gradient(
+            to top,
+            rgba(0,0,0,.95),
+            rgba(0,0,0,.45)
+        );
+    }
+
+    .modelos-title{
+        font-size:2rem;
+    }
+
+    .title-conces-section{
+        text-align:center;
+        font-size:1.4rem;
+        padding:0 20px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .img-brand{
+        width:120px;
+    }
+
+    .titulo-hero{
+        font-size:1.8rem;
+    }
+
+    .descricao-hero{
+        font-size:.95rem;
+    }
+
+    .hero-section{
+        background-position:center;
+    }
+
+    .card-title{
+        font-size:1.3rem;
+    }
+
+    .modelos-button,
+    .card-button{
+        width:100%;
+        max-width:260px;
+    }
+
+    .hibridos,
+    .eletricos{
+        height:380px;
+    }
+
+    .conces-section{
+        height:500px;
+    }
+
+    .linear-container-conces{
+        gap:30px;
+        padding:20px;
+    }
+}

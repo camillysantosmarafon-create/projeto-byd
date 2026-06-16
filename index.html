@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BYD</title>
+</head>
+<body>
+
+    <header class="topo">
+        <nav class="menu">
+
+            <img src="./assets/image/byd-logo-branco.png" alt="Logo da BYD" class="img-brand">
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                <li class="nav-item"><a href="#modelos" class="nav-link">Modelos</a></li>
+                <li class="nav-item"><a href="#concessionarias" class="nav-link">Concessionárias</a></li>
+            </ul>
+
+            <div class="button-container">
+                <a href="#" class="button-cta">Test Drive</a>
+            </div>
+
+            <button class="hamburger" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <main class="conteudo">
+
+        <section class="hero-section" id="home">
+            <div class="linear-container">
+                <div class="text-hero-container">
+                    <h1 class="titulo-hero">
+                        O futuro da mobilidade já chegou.
+                        E ele está ao seu alcance.
+                    </h1>
+
+                    <p class="descricao-hero">
+                        Conheça a nova geração de veículos BYD:
+                        mais tecnologia, economia e sustentabilidade
+                        para transformar cada trajeto em uma experiência única.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-container" id="tecnologias">
+
+            <div class="card-1">
+                <div class="overlay">
+                    <h3 class="card-title">e-Platform 3.0</h3>
+                    <p class="card-description">
+                        Tecnologia desenvolvida para entregar mais eficiência,
+                        segurança e desempenho.
+                    </p>
+                    <a href="#" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="card-2">
+                <div class="overlay">
+                    <h3 class="card-title">Super DM-i</h3>
+                    <p class="card-description">
+                        Sistema híbrido inteligente com mais economia,
+                        autonomia e performance.
+                    </p>
+                    <a href="#" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="card-3">
+                <div class="overlay">
+                    <h3 class="card-title">Nova Energia</h3>
+                    <p class="card-description">
+                        Soluções sustentáveis para uma mobilidade
+                        mais limpa e inteligente.
+                    </p>
+                    <a href="#" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="card-4">
+                <div class="overlay">
+                    <h3 class="card-title">Blade Battery</h3>
+                    <p class="card-description">
+                        Bateria segura, resistente e eficiente para veículos
+                        elétricos de alta tecnologia.
+                    </p>
+                    <a href="#" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="modelos" id="modelos">
+
+            <div class="hibridos">
+                <div class="modelos-content">
+                    <a href="#" class="modelos-button">
+                        Ver Modelos
+                    </a>
+                </div>
+            </div>
+
+            <div class="eletricos">
+                <div class="modelos-content">
+                    <a href="#" class="modelos-button">
+                        Ver Modelos
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="conces-section" id="concessionarias">
+
+            <div class="linear-container-conces">
+                <h1 class="title-conces-section">
+                    Descubra qual modelo combina com o seu estilo de vida.
+                </h1>
+
+                <a href="#" class="modelos-button">
+                    Ver Concessionárias
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape"></footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('.nav-list');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navList.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
